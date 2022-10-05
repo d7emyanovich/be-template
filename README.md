@@ -124,3 +124,11 @@ When you have finished the assignment, create a github repository and send us th
   
 
 Thank you and good luck! 🙏
+
+## TODO
+- [ ] Add Custom error Handler
+- [ ] Add Repositories
+- [ ] Move routs to separate files/ADD Controllers
+- [ ] Add Unit tests
+- [ ] Add Integration tests
+
