@@ -9,12 +9,23 @@
     "sqlite3": "^4.0.1"
   },
   "scripts": {
-    "start": "nodemon ./src/server.js",
-    "seed": "node ./scripts/seedDb.js"
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "nodemon src/server.ts",
+    "seed": "nodemon scripts/seedDb.ts"
   },
   "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/node": "^16.11.63",
     "concurrently": "4.1.0",
-    "nodemon": "1.19.1"
+    "nodemon": "1.19.1",
+    "prettier": "^2.7.1",
+    "reflect-metadata": "^0.1.13",
+    "sequelize-typescript": "^2.1.3",
+    "ts-node": "^10.9.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.8.4"
   },
   "engines": {
     "node": ">=10.16.3"
